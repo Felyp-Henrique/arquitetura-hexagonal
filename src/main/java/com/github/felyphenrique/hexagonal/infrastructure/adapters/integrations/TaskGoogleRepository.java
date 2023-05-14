@@ -12,7 +12,7 @@ import com.github.felyphenrique.hexagonal.domain.repositories.ITaskRepository;
  * Exemplo de integração com Google Tasks.
  */
 @Repository("integrations")
-public final class TaskGoogleRepository implements ITaskRepository {
+public class TaskGoogleRepository implements ITaskRepository {
 
     @Override
     public List<Task> all() {

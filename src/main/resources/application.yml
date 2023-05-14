@@ -1,4 +1,9 @@
 spring:
   datasource:
-    url: jdbc:sqlite:controle_sovis.db
-    driver-class-name: org.sqlite.JDBC
+    control:
+      url: jdbc:sqlite:control.db
+      driver-class-name: org.sqlite.JDBC
+  flyway:
+    control:
+      jdbcUrl: jdbc:sqlite:control.db
+      driverClassName: org.sqlite.JDBC

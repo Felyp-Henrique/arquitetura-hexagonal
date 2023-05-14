@@ -3,6 +3,7 @@ package com.github.felyphenrique.hexagonal.domain.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.github.felyphenrique.hexagonal.domain.entities.Task;
@@ -10,12 +11,10 @@ import com.github.felyphenrique.hexagonal.domain.repositories.ITaskRepository;
 
 @Service
 public class TaskService {
-    private final ITaskRepository repository;
 
     @Autowired
-    public TaskService(final ITaskRepository repository) {
-        this.repository = repository;
-    }
+    @Qualifier("database")
+    private ITaskRepository repository;
 
     public List<Task> all() {
         return this.repository.all();

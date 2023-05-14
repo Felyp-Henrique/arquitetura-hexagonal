@@ -9,7 +9,7 @@ import com.github.felyphenrique.hexagonal.domain.entities.Task;
 import com.github.felyphenrique.hexagonal.domain.repositories.ITaskRepository;
 
 @Repository("database")
-public final class TaskDatabaseRepository implements ITaskRepository {
+public class TaskDatabaseRepository implements ITaskRepository {
 
     @Override
     public List<Task> all() {

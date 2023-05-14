@@ -13,7 +13,7 @@ import com.github.felyphenrique.hexagonal.domain.repositories.ITaskRepository;
  * mensageiro como Apache Kafka.
  */
 @Repository("messengers")
-public final class TaskKafkaRepository implements ITaskRepository {
+public class TaskKafkaRepository implements ITaskRepository {
 
     @Override
     public List<Task> all() {
