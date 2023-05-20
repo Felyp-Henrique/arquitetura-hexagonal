@@ -5,14 +5,16 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import com.github.felyphenrique.hexagonal.application.core.adapters.ContextIntegrationAdapter;
 import com.github.felyphenrique.hexagonal.domain.entities.Task;
 import com.github.felyphenrique.hexagonal.domain.repositories.ITaskRepository;
 
 /**
  * Exemplo de integração com Google Tasks.
  */
-@Repository("integrations")
-public class TaskIntegrationRepository implements ITaskRepository {
+@Repository
+@ContextIntegrationAdapter
+public class GoogleTaskRepository implements ITaskRepository {
 
     @Override
     public List<Task> all() {

@@ -1,4 +1,4 @@
-package com.github.felyphenrique.hexagonal.infrastructure.configurations;
+package com.github.felyphenrique.hexagonal.infrastructure.database;
 
 import javax.sql.DataSource;
 

@@ -7,5 +7,10 @@ spring:
     control:
       jdbcUrl: jdbc:sqlite:control.db
       driverClassName: org.sqlite.JDBC
+  security:
+    user:
+      name: admin
+      password: admin
 app:
   version: v1
+  adapter: database

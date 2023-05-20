@@ -13,7 +13,6 @@ import com.github.felyphenrique.hexagonal.domain.repositories.ITaskRepository;
 public class TaskService {
 
     @Autowired
-    @Qualifier("database")
     private ITaskRepository repository;
 
     public List<Task> all() {

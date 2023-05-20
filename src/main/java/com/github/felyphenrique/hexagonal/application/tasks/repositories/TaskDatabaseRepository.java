@@ -5,10 +5,12 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import com.github.felyphenrique.hexagonal.application.core.adapters.ContextDatabaseAdapter;
 import com.github.felyphenrique.hexagonal.domain.entities.Task;
 import com.github.felyphenrique.hexagonal.domain.repositories.ITaskRepository;
 
-@Repository("database")
+@Repository
+@ContextDatabaseAdapter
 public class TaskDatabaseRepository implements ITaskRepository {
 
     @Override
