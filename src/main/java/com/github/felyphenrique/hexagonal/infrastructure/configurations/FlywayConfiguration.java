@@ -13,7 +13,7 @@ import org.springframework.context.annotation.DependsOn;
 public class FlywayConfiguration {
 
     @Bean
-    @ConfigurationProperties(prefix = "spring.datasource.control")
+    @ConfigurationProperties(prefix = "spring.flyway.control")
     public DataSource flywayDataSourceControl() {
         return DataSourceBuilder.create().build();
     }

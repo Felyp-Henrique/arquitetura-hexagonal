@@ -1,23 +1,23 @@
 package com.github.felyphenrique.hexagonal.domain.entities;
 
 public final class Task {
-    private long id;
+    private String id;
     private String description;
     private String date;
     private boolean completed;
 
     public Task() {
-        this.id = 0;
+        this.id = "";
         this.description = "";
         this.date = "";
         this.completed = false;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

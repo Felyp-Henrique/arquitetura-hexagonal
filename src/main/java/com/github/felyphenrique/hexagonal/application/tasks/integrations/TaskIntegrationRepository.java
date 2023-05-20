@@ -1,4 +1,4 @@
-package com.github.felyphenrique.hexagonal.infrastructure.adapters.integrations;
+package com.github.felyphenrique.hexagonal.application.tasks.integrations;
 
 import java.util.Collections;
 import java.util.List;
@@ -12,7 +12,7 @@ import com.github.felyphenrique.hexagonal.domain.repositories.ITaskRepository;
  * Exemplo de integração com Google Tasks.
  */
 @Repository("integrations")
-public class TaskGoogleRepository implements ITaskRepository {
+public class TaskIntegrationRepository implements ITaskRepository {
 
     @Override
     public List<Task> all() {

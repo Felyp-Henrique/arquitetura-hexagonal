@@ -1,4 +1,4 @@
-package com.github.felyphenrique.hexagonal.infrastructure.adapters.database;
+package com.github.felyphenrique.hexagonal.application.tasks.repositories;
 
 import java.util.Collections;
 import java.util.List;

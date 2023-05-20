@@ -7,3 +7,5 @@ spring:
     control:
       jdbcUrl: jdbc:sqlite:control.db
       driverClassName: org.sqlite.JDBC
+app:
+  version: v1
